@@ -23,8 +23,8 @@ header.append(menuIcon);
 const logo = document.createElement("a");
 logo.href = "#";
 logo.className = "logo";
-logo.textContent = "Porfolio";
-header.append(logo);
+logo.textContent = "Portfolio";
+header.prepend(logo);
 
 // Navbar
 const nav = document.createElement("nav");
@@ -34,7 +34,7 @@ const links = ["Home", "About", "Services", "Portfolio", "Contact"];
 
 for (let i = 0; i < links.length; i++) {
     const link = document.createElement("a");
-    link.href = "#";
+    link.href = `#${links[i].toLowerCase()}`;
     link.textContent = links[i];
     nav.append(link);
 }
@@ -128,3 +128,49 @@ home.append(homeImage);
 const img = document.createElement("img");
 img.src = "./images/personal-portfolio-pic.png";
 homeImage.append(img);
+
+// About secton
+const about = document.createElement("section");
+about.className = "about";
+about.id = "about";
+body.append(about);
+
+// About Div
+const aboutDiv = document.createElement("div");
+aboutDiv.className = "about-content";
+about.append(aboutDiv);
+
+// text for about
+const aboutMe = document.createElement("h2");
+aboutMe.className = "heading";
+aboutMe.textContent = "About ";
+aboutDiv.append(aboutMe);
+
+const me = document.createElement("span");
+me.textContent = "Me";
+aboutMe.append(me);
+
+const title2 = document.createElement("h3");
+title2.textContent = "Full Stack Developer";
+aboutDiv.append(title2);
+
+const info = document.createElement("p");
+info.textContent =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus velit voluptatum officia sapiente numquam aperiam necessitatibus aliquid dolorum esse quis omnis exercitationem nihil aut in dicta, ipsum, maiores quae distinctio incidunt dolore consequatur libero ea.";
+aboutDiv.append(info);
+
+// about img
+const aboutImage = document.createElement("div");
+aboutImage.className = "about-img";
+about.prepend(aboutImage); //append makes image and text flip sides of screen
+
+const img2 = document.createElement("img");
+img2.src = "./images/personal-portfolio-pic.png";
+aboutImage.append(img2);
+
+// read more button
+const readMore = document.createElement("a");
+readMore.href = "#";
+readMore.className = "btn";
+readMore.textContent = "Read More";
+aboutDiv.append(readMore);
