@@ -80,7 +80,7 @@ const socialDiv = document.createElement("div");
 socialDiv.className = "social-media";
 homeDiv.append(socialDiv);
 
-// Socials (does not show the box icon, not sure how to include those)
+// Socials
 const facebook = document.createElement("a");
 facebook.href = "#";
 socialDiv.append(facebook);
@@ -123,7 +123,7 @@ homeDiv.append(button);
 // home image
 const homeImage = document.createElement("div");
 homeImage.className = "home-img";
-homeDiv.append(homeImage);
+home.append(homeImage);
 
 const img = document.createElement("img");
 img.src = "./images/personal-portfolio-pic.png";
