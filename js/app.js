@@ -162,7 +162,7 @@ aboutDiv.append(info);
 // about img
 const aboutImage = document.createElement("div");
 aboutImage.className = "about-img";
-about.prepend(aboutImage); //append makes image and text flip sides of screen
+about.prepend(aboutImage); //append makes image and text flip sides of screen (maybe due to where i wrote this block of code?)
 
 const img2 = document.createElement("img");
 img2.src = "./images/personal-portfolio-pic.png";
@@ -174,3 +174,66 @@ readMore.href = "#";
 readMore.className = "btn";
 readMore.textContent = "Read More";
 aboutDiv.append(readMore);
+
+// Services Section
+const services = document.createElement("section");
+services.className = "services";
+services.id = "services";
+body.append(services);
+
+const ourServices = document.createElement("h2");
+ourServices.className = "heading";
+ourServices.textContent = "My ";
+services.append(ourServices);
+
+const ourSpan = document.createElement("span");
+ourSpan.textContent = "Services";
+ourServices.append(ourSpan);
+
+// Services Container
+const servicesContainer = document.createElement("div");
+servicesContainer.className = "services-container";
+services.append(servicesContainer);
+
+// Services Box(es)
+const myServices = [
+    {
+        icon: "bx bx-code-alt",
+        title: "Web Development",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis velit iste, vitae facere explicabo delectus sit dolorem!",
+    },
+    {
+        icon: "bx bxs-paint",
+        title: "Graphic Design",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis velit iste, vitae facere explicabo delectus sit dolorem!",
+    },
+    {
+        icon: "bx bx-bar-chart-alt",
+        title: "Digital Marketing",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis velit iste, vitae facere explicabo delectus sit dolorem!",
+    },
+];
+
+myServices.forEach((service) => {
+    const servicesBox = document.createElement("div");
+    servicesBox.className = "services-box";
+    servicesContainer.append(servicesBox);
+
+    const icon = document.createElement("i");
+    icon.className = service.icon;
+    servicesBox.append(icon);
+
+    const title = document.createElement("h3");
+    title.textContent = service.title;
+    servicesBox.append(title);
+
+    const description = document.createElement("p");
+    description.textContent = service.desc;
+    servicesBox.append(description);
+
+    const readMoreBtn = document.createElement("a");
+    readMoreBtn.href = "#";
+    readMoreBtn.className = "btn"
+    readMoreBtn.textContent = "Read More";
+    servicesBox.append(readMoreBtn);
+});
