@@ -394,6 +394,9 @@ span {
     section {
         padding: 10rem 3% 2rem;
     }
+    body {
+        overflow: hidden;
+    }
     .services {
         padding-bottom: 7rem;
     }
@@ -411,6 +414,9 @@ span {
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
+    }
+    body {
+        overflow: hidden;
     }
     .navbar {
         position: absolute;
@@ -465,6 +471,9 @@ span {
 @media (max-width: 615px) {
     .portfolio-container {
         grid-template-columns: 1fr;
+    }
+    body {
+        overflow: hidden;
     }
 }
 
