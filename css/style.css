@@ -415,9 +415,6 @@ span {
     #menu-icon {
         display: block;
     }
-    body {
-        overflow: hidden;
-    }
     .navbar {
         position: absolute;
         top: 100%;
@@ -471,9 +468,6 @@ span {
 @media (max-width: 615px) {
     .portfolio-container {
         grid-template-columns: 1fr;
-    }
-    body {
-        overflow: hidden;
     }
 }
 
