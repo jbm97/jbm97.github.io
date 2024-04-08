@@ -58,7 +58,7 @@ section {
 }
 
 .navbar a {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--text-color);
     margin-left: 64px;
     transition: 0.3s ease;
@@ -285,12 +285,15 @@ span {
 }
 
 .portfolio-layer h4 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 5px #000000;
 }
 
 .portfolio-layer p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin: 0.3rem 0 1rem;
+    text-shadow: -0.5px -0.5px 4px #000, 0.5px -0.5px 4px #000, -0.5px 0.5px 4px #000,
+        0.5px 0.5px 4px #000;
 }
 
 .portfolio-layer a {
@@ -382,13 +385,13 @@ span {
 }
 
 /* Breakpoints */
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
     html {
         font-size: 55%;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
     header {
         padding: 2rem 3%;
     }
@@ -434,7 +437,7 @@ span {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .home {
         flex-direction: column;
     }
@@ -476,7 +479,6 @@ span {
 }
 
 @media (max-width: 450px) {
-    /* My window cannot go this small, can't see if anything happens. If I change to 500px I can see. */
     html {
         font-size: 50%;
     }
