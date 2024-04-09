@@ -29,7 +29,7 @@ window.onscroll = () => {
     /*==================== sticky navbar ====================*/
     let header = document.querySelector("header");
 
-    header.classList.toggle("sticky", window.scrollY > 100);
+    header.classList.toggle("sticky", window.scrollY > 1);
 
     /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
     menuIcon.classList.remove("bx-x");
@@ -53,7 +53,7 @@ ScrollReveal().reveal(".home-content p, .about-content ", { origin: "right" });
 
 /*==================== typed js ====================*/
 const typed = new Typed(".multiple-text", {
-    strings: ["Full Stack Developer", "Stack Developer Full", "Developer Full Stack"],
+    strings: ["Full Stack Developer", "Frontend Engineer", "Backend Engineer"],
     typeSpeed: 100,
     backSpeed: 70,
     backDelay: 1500,

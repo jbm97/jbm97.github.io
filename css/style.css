@@ -47,7 +47,7 @@ section {
 }
 
 .header.sticky {
-    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.15rem solid rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -173,6 +173,8 @@ span {
 .heading {
     text-align: center;
     font-size: 4.5rem;
+    padding-top: 4rem;
+    /* added padding so section titles are not covered by sticky nav when clicking the navbar to navigate*/
 }
 
 .about-content h2 {
