@@ -282,6 +282,22 @@ span {
     transition: 0.5s ease;
 }
 
+.field .error-text {
+    font-size: 14px;
+    color: #25d9a3;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-text {
+    display: block;
+}
+
+form .textarea-field .error-text {
+    margin-top: -10px;
+}
+
 .portfolio-box:hover .portfolio-layer {
     transform: translateY(0);
 }
@@ -342,8 +358,12 @@ span {
     margin: 0.7rem 0;
 }
 
-.contact form .input-box input {
+.input-box .input-field {
     width: 49%;
+}
+
+.field.error .item {
+    border-color: red;
 }
 
 .contact form textarea {
